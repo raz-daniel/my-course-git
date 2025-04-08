@@ -1,0 +1,14 @@
+# the existing image that i want to start with:
+# i.e. add layers on top of it
+FROM node:22-alpine
+
+# on the exisitng image, create a directory names /app
+# and from now op each command will hapeen inside the app directory
+WORKDIR /app 
+
+#transfer the files that i need
+#this is actually the 3rd layer
+COPY ./app.js ./
+
+#every image, when it is loaded into a container, need to run a command to start the program
+CMD node app.js
