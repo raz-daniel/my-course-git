@@ -1,0 +1,18 @@
+html {
+    background-color: red;
+}
+
+p {
+    color: burlywood;
+    font-size: x-large;
+    text-align: center;
+    text-decoration: underline;
+}
+
+p:hover {
+    font-size: xx-large;
+}
+
+p::first-letter {
+    color: black;
+}

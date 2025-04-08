@@ -1,0 +1,21 @@
+html {
+    background-color: blueviolet;
+}
+
+.cool-design {
+    text-align: center;
+    font-size: x-large;
+    font-style: italic;
+    color: aqua;
+}
+
+#tableshoe {
+    text-align: center;
+    margin: 0 auto;
+    border: 5px dotted aqua;
+}
+
+img {
+    border: 10px solid black;
+    margin: 0 10 20 350 ;
+}
