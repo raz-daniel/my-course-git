@@ -1,0 +1,4 @@
+.FollowingList {
+    display: flex;
+    flex-direction: row;
+}
