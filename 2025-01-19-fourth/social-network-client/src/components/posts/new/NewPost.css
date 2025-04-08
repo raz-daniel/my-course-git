@@ -1,0 +1,46 @@
+.NewPost {
+    border: 1px dashed lightgreen;
+    padding: 4px;
+    margin: 4px;
+}
+
+.NewPost > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.NewPost .error {
+    color: red;
+}
+
+.NewPost img {
+    height: 10px;
+}
+
+.growth {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+
+  width: 10px;
+  height: 10px;
+  
+  
+  /* overflow: hidden; */
+  animation: grow 8s forwards;
+}
+
+@keyframes grow {
+    from {
+        width: 10px;
+        height: 10px;
+        opacity: 0;     /* added now why ? */
+    }
+    to {
+        width: 80%;    /* or whatever final size you want */
+        height: auto;   /* or whatever final size you want */
+        opacity: 1;     /* added now why ? */
+    }
+}

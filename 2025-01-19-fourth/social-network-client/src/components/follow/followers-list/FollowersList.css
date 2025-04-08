@@ -1,0 +1,4 @@
+.FollowersList {
+    display: flex;
+    flex-direction: row;
+}
