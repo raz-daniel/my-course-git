@@ -1,0 +1,9 @@
+.Footer {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 14px;
+  }
+  
+  .Footer p {
+    margin: 0;
+  }

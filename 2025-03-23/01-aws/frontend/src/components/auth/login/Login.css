@@ -1,0 +1,27 @@
+.Login {
+    max-width: 480px;
+    margin: 80px auto;
+    padding: 32px;
+    background-color: var(--surface);
+    border-radius: var(--rounded);
+    box-shadow: var(--shadow);
+  }
+  
+  .Login fieldset {
+    border: none;
+    margin-bottom: 24px;
+  }
+  
+  .Login legend {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+  }
+  
+  .Login button {
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px;
+    font-size: 16px;
+  }

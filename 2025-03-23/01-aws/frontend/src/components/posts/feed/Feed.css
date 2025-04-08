@@ -1,0 +1,26 @@
+.Feed {
+    width: 100%;
+  }
+  
+  .Feed .info {
+    background-color: var(--primary-light);
+    color: white;
+    padding: 12px 16px;
+    border-radius: var(--rounded);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .Feed .info button {
+    background-color: white;
+    color: var(--primary);
+    margin-left: 8px;
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  
+  .Feed .info button:hover {
+    background-color: var(--background);
+  }

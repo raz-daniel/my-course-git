@@ -1,0 +1,31 @@
+.Follow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-radius: var(--rounded);
+    background-color: var(--background);
+    transition: var(--transition);
+  }
+  
+  .Follow:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+  }
+  
+  .Follow img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .Follow div:nth-child(2) {
+    flex: 1;
+    font-weight: 500;
+  }
+  
+  .Follow .LoadingButton button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }

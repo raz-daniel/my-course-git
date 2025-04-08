@@ -1,0 +1,14 @@
+.NewComment {
+    margin-bottom: 20px;
+  }
+  
+  .NewComment textarea {
+    min-height: 80px;
+  }
+  
+  .NewComment span {
+    color: var(--error);
+    font-size: 14px;
+    margin-bottom: 12px;
+    display: block;
+  }

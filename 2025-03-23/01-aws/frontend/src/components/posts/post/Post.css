@@ -1,0 +1,62 @@
+.Post {
+    background-color: var(--surface);
+    border-radius: var(--rounded);
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+  }
+  
+  .Post:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  }
+  
+  .Post .firstPart {
+    margin-bottom: 16px;
+  }
+  
+  .Post .firstPart > div:first-child {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .Post .info {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+  }
+  
+  .Post img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 16px 0;
+  }
+  
+  .Post button {
+    margin-right: 8px;
+  }
+  
+  .Post button:first-child {
+    background-color: var(--error);
+  }
+  
+  .Post button:first-child:hover {
+    background-color: #e04848;
+  }
+  
+  .Post span {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-left: 8px;
+  }
+  
+  .Post.growth {
+    animation: growth 0.5s ease-out;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .Post {
+      padding: 16px;
+    }
+  }
