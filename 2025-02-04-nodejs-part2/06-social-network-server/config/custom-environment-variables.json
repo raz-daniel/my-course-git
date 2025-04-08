@@ -1,0 +1,13 @@
+{
+    "app": {
+        "port": "APP_PORT",
+        "name": "APP_NAME",
+        "sequelizeLogging": "APP_SEQUELIZE_LOGGING"
+    },
+    "db": {
+        "password": "DB_PASSWORD",
+        "sync": {
+            "force": "DB_FORCE_SYNC"
+        }
+    }
+}
