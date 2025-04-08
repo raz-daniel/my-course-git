@@ -1,0 +1,86 @@
+.Layout {
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas:
+      "header header header"
+      "left-aside main right-aside"
+      "footer footer footer";
+    grid-template-columns: var(--aside-width) 1fr var(--aside-width);
+    grid-template-rows: var(--header-height) 1fr auto;
+  }
+  
+  .Layout header {
+    grid-area: header;
+    box-shadow: var(--shadow);
+    z-index: 100;
+  }
+  
+  .Layout aside:first-of-type {
+    grid-area: left-aside;
+    padding: 20px;
+    border-right: 1px solid var(--border);
+    background-color: var(--surface);
+    overflow-y: auto;
+    height: calc(100vh - var(--header-height));
+    position: sticky;
+    top: var(--header-height);
+  }
+  
+  .Layout main {
+    grid-area: main;
+    padding: 24px;
+    overflow-y: auto;
+    background-color: var(--background);
+    min-height: calc(100vh - var(--header-height));
+  }
+  
+  .Layout aside:last-of-type {
+    grid-area: right-aside;
+    padding: 20px;
+    border-left: 1px solid var(--border);
+    background-color: var(--surface);
+    overflow-y: auto;
+    height: calc(100vh - var(--header-height));
+    position: sticky;
+    top: var(--header-height);
+  }
+  
+  .Layout footer {
+    grid-area: footer;
+    padding: 12px 20px;
+    text-align: center;
+    background-color: var(--surface);
+    border-top: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 14px;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .Layout {
+      grid-template-areas:
+        "header header"
+        "main main"
+        "left-aside right-aside"
+        "footer footer";
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: var(--header-height) auto auto auto;
+    }
+    
+    .Layout aside {
+      height: auto;
+      position: static;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .Layout {
+      grid-template-areas:
+        "header"
+        "main"
+        "left-aside"
+        "right-aside"
+        "footer";
+      grid-template-columns: 1fr;
+      grid-template-rows: var(--header-height) auto auto auto auto;
+    }
+  }

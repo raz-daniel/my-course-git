@@ -1,0 +1,44 @@
+.NewPost {
+    background-color: var(--surface);
+    border-radius: var(--rounded);
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: var(--shadow);
+  }
+  
+  .NewPost textarea {
+    min-height: 120px;
+    margin-bottom: 16px;
+  }
+  
+  .NewPost input[type="file"] {
+    padding: 8px 0;
+    border: none;
+  }
+  
+  .NewPost img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .NewPost .error {
+    color: var(--error);
+    font-size: 14px;
+    margin-bottom: 12px;
+    display: block;
+  }
+  
+  .NewPost p img {
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .NewPost {
+      padding: 16px;
+    }
+  }

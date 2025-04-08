@@ -1,0 +1,123 @@
+/* Global Styles */
+:root {
+  --primary: #4a6bff;
+  --primary-light: #7b8eff;
+  --primary-dark: #3451cc;
+  --secondary: #ff6b6b;
+  --background: #f8f9fa;
+  --surface: #ffffff;
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+  --text-tertiary: #adb5bd;
+  --border: #dee2e6;
+  --success: #42b883;
+  --error: #ff5252;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --rounded: 12px;
+  --transition: all 0.3s ease;
+  --header-height: 60px;
+  --aside-width: 300px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 16px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+button:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 14px;
+  transition: var(--transition);
+  margin-bottom: 12px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(74, 107, 255, 0.2);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--border);
+  margin: 16px 0;
+}
+
+/* Animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes growth {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Toast styling overrides */
+.p-toast {
+  opacity: 1 !important;
+}
+
+.p-toast .p-toast-message {
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+  :root {
+    --aside-width: 250px;
+  }
+}

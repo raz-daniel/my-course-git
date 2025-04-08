@@ -1,0 +1,13 @@
+.Following {
+    background-color: var(--surface);
+    border-radius: var(--rounded);
+    padding: 20px;
+    margin-bottom: 24px;
+    box-shadow: var(--shadow);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .Following {
+      padding: 16px;
+    }
+  }
