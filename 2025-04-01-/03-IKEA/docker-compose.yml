@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  database:
+    container_name: ikea-mongodb
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./database/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+    healthcheck:
+      test: ["CMD", "mongo", "--eval", "db.adminCommand('ping')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+  backend:
+    container_name: ikea-backend
+    ports:
+      - 3000:3000
+    environment:
+      - NODE_ENV=compose
+    build: ./backend
+    depends_on:
+      database:
+        condition: service_healthy
+
+  frontend:
+    container_name: ikea-frontend
+    ports:
+      - 5173:80
+    build: ./frontend
