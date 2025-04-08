@@ -1,0 +1,11 @@
+import Car from "./car.js";
+const micra = new Car('Nissan', 'micra', false, 2020, 13000);
+console.log(micra);
+micra.displaySerialNumber();
+micra.drive();
+micra.displaySaleInfo();
+const maxima = new Car('nissan', 'maxima', true, 2015, 113000);
+console.log(maxima);
+maxima.displaySerialNumber();
+maxima.drive();
+maxima.displaySaleInfo();

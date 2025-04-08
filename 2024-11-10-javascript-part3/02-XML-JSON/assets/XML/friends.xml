@@ -1,0 +1,26 @@
+<!-- ******************************************************* -->
+<!-- ******************************************************* -->
+                      <!-- XML -->
+<!-- ******************************************************* -->
+<!-- ******************************************************* -->
+
+<friends>
+    <friend>
+        <name>Mira</name>
+        <age>22</age>
+        <city>Petach Tiqwa</city>
+        <gender>female</gender>
+    </friend>
+    <friend>
+        <name>Yoav</name>
+        <age>22</age>
+        <city>Herzliya</city>
+        <gender>male</gender>
+    </friend>
+    <friend>
+        <name>Chai</name>
+        <age>23</age>
+        <city>Netanya</city>
+        <gender>male</gender>
+    </friend>
+</friends>

@@ -1,0 +1,64 @@
+html, body {
+    background-color: lightskyblue;
+    direction: rtl;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+#headlines {
+    margin-top: 20px;
+    text-align: center;
+    font-size: x-large;
+}
+
+div a {
+    margin: 100px;
+}
+
+a:visited {
+    color: blue;
+}
+
+p {
+    font-size: larger;
+}
+
+#main-photo {
+    text-align: center;
+}
+
+footer > p {
+    text-align: center;
+    font-size: x-large;
+}
+
+h2 {
+    font-size: xx-large;
+}
+
+#Photoalbum {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    max-width: 1000px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#Photoalbum img {
+    width: 80%;
+    height: 150px;
+    padding: 1px;
+}
+
+#formi {
+    font-size: xx-large;
+}
+
+h4 {
+    font-size: xx-large;
+}

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: unswear;
+    src: url(/assets/fonts/UnswearDemoRegular.ttf);
+}
+
+p {
+    font-family: unswear;
+    font-size: 100px;
+    text-align: center;
+    border: 5px solid black;
+    margin: 250px;
+    background: linear-gradient(45deg, yellow, black, red, purple,  blue);
+    border-radius: 10px;
+    box-shadow: 0px 20px 50px 0px rgba(1, 1, 1, 1);
+}

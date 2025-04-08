@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Store Contact</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <h1>חנות החיות המגניבה בארץ!</h1>
+    <hr>
+    <div id="headlines">
+        <a href="/index.html">דף הבית</a>
+        <a href="/animals.html">חיות</a>
+        <a href="/contact-us.html">צור קשר</a>
+    </div>
+<h2>צור קשר:</h2>
+<div id="formi">
+    <form action="save.html" method="GET">
+        <table>
+            <tr>
+                <td><label for="firstname">שם פרטי:</label></td>
+                <td><input type="text" id="firstname" placeholder="שמך הפרטי"></td>
+            </tr>
+            <tr>
+                <td><label for="lastname">שם משפחה:</label></td>
+                <td><input type="text" id="lastname" placeholder="שם משפחתך"></td>
+            </tr>
+            <tr>
+                <td><label>מין:</label></td>
+                <td><input type="radio" name="gender"><span>זכר</span>
+                <br><input type="radio" name="gender"><span>נקבה</span></td>
+            </tr>
+            <tr>
+                <td><label for="">עיר:</label></td>
+                <td><select>
+                    <option selected="1" disabled="1">Please select city...</option>
+                    <option>Tel Aviv</option>                
+                    <option>Petach Tikwa</option>                
+                    <option>Jerusalem</option>                
+                    <option>Ashkelon</option> 
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="msg">הודעה:</label></td>
+                <td><textarea name="נא רשום" id="msg" placeholder="נא רשום הודעה"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button>שלח</button><button>נקה</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+    <footer>
+        <p>כל הזכויות שמורות &copy</p>
+    </footer>
+</body>
+</html>

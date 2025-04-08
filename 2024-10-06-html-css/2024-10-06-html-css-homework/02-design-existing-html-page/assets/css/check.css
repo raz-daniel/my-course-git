@@ -1,0 +1,21 @@
+table {
+    border:1px solid black;
+    float: right;
+    direction: rtl;
+}
+
+input[required] {
+    background-color: yellow;
+}
+
+#img-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#img-container > img {
+    max-width: 20%;
+    height: auto;
+    margin: 1 10 20 30;
+}

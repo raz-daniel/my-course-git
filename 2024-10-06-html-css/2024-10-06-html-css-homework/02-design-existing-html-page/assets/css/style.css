@@ -1,0 +1,60 @@
+html {
+    background-image: url(/assets/photos/פרקט-בלגי-QUICK-STEP-Eligna-U896-1-1-265x331.jpg);
+}
+
+.header-text {
+    text-align: center;
+    color: brown;
+    margin-top: 30px;
+}
+
+hr {
+    color: white;
+    margin-top: 30px;
+}
+
+.welcome-text {
+    text-align: center;
+    margin-top: 40px;
+}
+
+table {
+    border: 1px solid black;
+    float: right;
+    direction: rtl;
+    margin-top: 40px;
+}
+
+/* Not working */
+input[value] {
+    direction: ltr;
+    cursor: pointer;
+    float: left;
+}
+
+input[required] {
+    background-color: yellow;
+}
+
+#img-container img {
+    display: inline-block; /*Inline-block layout*/
+    width: 150px;
+    height: 150px;
+    /* margin: 10px; */
+    border: 2px solid #34495e;
+    border-radius: 10px;
+    vertical-align: top; /*Align images vertically*/
+}
+
+/* To center the container (optional, depending on design) */
+#img-container {
+    text-align: center;
+    margin-top: 250px;
+}
+
+#copyrights {
+    margin: 0 0 100 0;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 100px;
+}

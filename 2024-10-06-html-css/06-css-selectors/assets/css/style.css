@@ -1,0 +1,84 @@
+html {
+    border: 1px solid;
+}
+body {
+    border: 1px solid;
+}
+/* name selector */
+h1 { 
+    color: green;
+    background-color: yellow;
+}
+
+P {
+    color: red;
+    border: 1px dotted blue;
+}
+/* class selector */
+.cool-design {
+    color: blue;
+    background-color: red;
+}
+
+.cool-design-big {
+    font-size: xx-large;
+    font-weight: bold;
+}
+/* id selector */
+#last-paragraph {
+    font-size: xx-small;
+    text-decoration: underline;
+    font-style: italic;
+
+}
+/* attribute selector */
+input[placeholder] {
+    background-color: yellow;
+}
+
+input[placeholder="first name"] {
+    border: 3px dashed;
+}
+
+/* pseudo selector */
+
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: green;
+    font-size: x-large;
+}
+p::first-line {
+    background-color: blueviolet;
+}
+p::first-letter {
+    font-size: x-large;
+    color: cyan;
+}
+
+span {
+    color: black;
+}
+p::before {
+    
+}
+/* combination of selectors */
+p.cool-design {
+    text-decoration: underline;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+p a {
+    color: black;
+}
+
+p > a {
+    border: 3px dashed gray;
+}

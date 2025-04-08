@@ -1,0 +1,22 @@
+div > p:first-of-type {
+    color: red;
+}
+
+p {
+    border: 5px solid black;
+    height: 120px;
+    width: 250px;
+    padding: 10px;
+    margin: 100px;
+    color: orange;   
+}
+
+div > p:last-of-type {
+    color: green;
+}
+
+div {
+    display: grid;
+    max-width: 450px;
+    grid-template-columns: repeat(3, 1fr);
+}

@@ -1,0 +1,24 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    height: 100%;
+
+}
+
+.animal-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* Makes the images circular */
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+
+}
