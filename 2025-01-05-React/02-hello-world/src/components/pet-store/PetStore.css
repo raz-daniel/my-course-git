@@ -1,0 +1,10 @@
+.PetStore p {
+    color: green;
+}
+
+.PetStore {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgreen;
+    padding: 2px;
+}

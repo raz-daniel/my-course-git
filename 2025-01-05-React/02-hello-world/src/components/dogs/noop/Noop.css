@@ -1,0 +1,9 @@
+.Noop {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+}
+
+.Noop img {
+    max-width: 200px;
+}

@@ -1,0 +1,9 @@
+.Details {
+  border: 2px solid green;
+}
+
+.Details img {
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+}

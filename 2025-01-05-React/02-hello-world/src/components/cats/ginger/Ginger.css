@@ -1,0 +1,9 @@
+.Ginger {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+}
+
+.Ginger img {
+    max-width: 200px;
+}

@@ -1,0 +1,9 @@
+.Eden {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+}
+
+.Eden img {
+    max-width: 200px;
+}

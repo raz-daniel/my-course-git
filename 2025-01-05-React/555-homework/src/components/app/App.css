@@ -1,0 +1,16 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.App>div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.App>div div {
+  padding: 20px;
+  width: 42%;
+}
