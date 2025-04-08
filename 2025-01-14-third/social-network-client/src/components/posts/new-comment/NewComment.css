@@ -1,0 +1,8 @@
+.NewComment {
+    border: 1px solid black;
+}
+
+.NewComment form {
+    display: flex;
+    flex-direction: column;
+}
