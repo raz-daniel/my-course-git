@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digital Clock</title>
+    <style>
+        #clock {
+            font-size: 2rem;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock"></div>
+
+    <script>
+        // Initial display of time (so we don't wait 1 second to see it)
+        const updateClock = () => {
+            const div = document.getElementById('clock')
+            const now = new Date()
+            const create = `<p>${now.toLocaleTimeString()}</p>`
+            div.innerHTML = create
+        }
+
+        // Run immediately once
+        updateClock()
+        
+        // Then update every second
+        setInterval(updateClock, 1000)
+    </script>
+</body>
+</html>
