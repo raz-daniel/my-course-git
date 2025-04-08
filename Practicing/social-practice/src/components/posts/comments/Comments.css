@@ -1,0 +1,6 @@
+.Comments {
+    border: 1px solid darkgreen;
+    border-radius: 8px;
+    max-height: 100px;
+    overflow: auto;
+}

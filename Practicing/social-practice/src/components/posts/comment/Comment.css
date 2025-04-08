@@ -1,0 +1,13 @@
+.Comment {
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+.Comment .commentInfo {
+    font-size: small;
+}
+
+
+.Comment .commentBody {
+    font-size: larger;
+}

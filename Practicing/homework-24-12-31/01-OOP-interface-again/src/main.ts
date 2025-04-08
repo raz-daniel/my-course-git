@@ -1,0 +1,12 @@
+import Piano from "./piano.js";
+import WingPiano from "./wing-piano.js";
+
+const piano = new Piano (`Yamaha`, `Yellow`, `Lol`, 202)
+piano.display()
+piano.makeSound()
+piano.test()
+const wingPiano = new WingPiano (`Yamaha`, `Yellow`, `Lol`, 202, 1.2)
+wingPiano.display()
+wingPiano.makeSound()
+wingPiano.tune()
+

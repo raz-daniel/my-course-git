@@ -1,0 +1,123 @@
+/* Method 1: Using visibility */
+.container-visibility {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.container-visibility div {
+    background-color: #e9ecef;
+    padding: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    /* Hide all by default */
+    visibility: hidden;
+}
+
+/* Extra small devices */
+@media (max-width: 575.98px) {
+    .container-visibility {
+        grid-template-columns: 1fr;
+    }
+    .container-visibility div:nth-child(1) {
+        visibility: visible;
+    }
+}
+
+/* Small devices */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container-visibility {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container-visibility div:nth-child(-n+2) {
+        visibility: visible;
+    }
+}
+
+/* Method 2: Using opacity */
+.container-opacity {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.container-opacity div {
+    background-color: #e9ecef;
+    padding: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    /* Hide all by default */
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+/* Extra small devices */
+@media (max-width: 575.98px) {
+    .container-opacity {
+        grid-template-columns: 1fr;
+    }
+    .container-opacity div:nth-child(1) {
+        opacity: 1;
+    }
+}
+
+/* Small devices */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container-opacity {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container-opacity div:nth-child(-n+2) {
+        opacity: 1;
+    }
+}
+
+/* Method 3: Using grid display property */
+.container-grid {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.container-grid div {
+    background-color: #e9ecef;
+    padding: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    /* Hide all by default */
+    display: none;
+}
+
+/* Extra small devices */
+@media (max-width: 575.98px) {
+    .container-grid {
+        grid-template-columns: 1fr;
+    }
+    .container-grid div:nth-child(1) {
+        display: grid;
+    }
+}
+
+/* Small devices */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container-grid div:nth-child(-n+2) {
+        display: grid;
+    }
+}
+
+/* Bonus Method: Using CSS Grid auto-fit */
+.container-autofit {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.container-autofit div {
+    background-color: #e9ecef;
+    padding: 2rem;
+    border-radius: 5px;
+    text-align: center;
+}

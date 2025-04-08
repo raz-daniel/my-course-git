@@ -1,0 +1,37 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 98%;
+    background-color: lightcyan;
+}
+body * {
+    border: 2px solid black;
+}
+header h1 {
+    text-align: center;
+    height: 70px;
+}
+
+header hr {
+    color: 2px lightgray;
+}
+
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 30px;
+}
+
+main {
+    height: 70%
+}
+nav * {
+    margin: auto;
+    font-size: larger;
+}
+
+footer * {
+    text-align: center;
+    font-size: larger;
+}

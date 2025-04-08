@@ -1,0 +1,19 @@
+.Post {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.Post button {
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.Post .removePost:hover {
+    font-size: larger;
+}

@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "outDir": "assest/js",
+        "noEmitOnError": true,
+        "target": "ES2017"
+    }
+}

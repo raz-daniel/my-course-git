@@ -1,0 +1,51 @@
+.Header {
+    height: 100%;
+}
+
+.Header .logo {
+    display: flex;
+    justify-content: center;
+}
+
+.Header .logo img {
+    height: 60px;
+}
+
+.Header .logIn img {
+    height: 30px;
+}
+
+.Header .logIn {
+    display: flex;
+    gap: 5px;
+}
+
+.Header button {
+    border: 1px solid darkcyan;
+    border-radius: 8px;
+    background-color: yellow;
+    font-size: larger;
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(36, 195, 231);
+    align-items: center;
+}
+
+.Header nav{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    gap: 30px;
+}
+
+.Header .active {
+    color: Blue;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 4px;
+    
+}

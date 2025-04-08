@@ -1,0 +1,38 @@
+.NewPost {
+    border: 1px solid blue;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.NewPost form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.NewPost form input, .NewPost form textarea{
+    border-radius:8px;
+    margin-top: 5px;
+    width: 50%;
+    align-self: center;
+    height: 2rem;
+    text-align: center;
+    place-content: center;
+    overflow-y: auto;
+}
+
+.NewPost form textarea{ 
+    height: 4rem;
+
+}
+
+.NewPost form button {
+    background-color: green;
+    color: white;
+    font-size: larger;
+    align-self: center;
+    width: 30%;
+    border: green;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}

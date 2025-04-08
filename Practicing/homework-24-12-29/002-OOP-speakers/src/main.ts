@@ -1,0 +1,17 @@
+import Speaker from "./speaker.js";
+
+const speaker1 = new Speaker('yellow', 89)
+const speaker2 = new Speaker('pink', 129)
+
+speaker1.displayTurnOn()
+speaker1.displayTurnOff()
+speaker1.displaySound()
+speaker1.displayObject()
+
+speaker2.displayTurnOn()
+speaker2.displayTurnOff()
+speaker2.displaySound()
+speaker2.displayObject()
+
+
+

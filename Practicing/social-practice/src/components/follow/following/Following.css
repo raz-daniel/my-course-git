@@ -1,0 +1,35 @@
+.Following {
+    border: 1px solid rgb(36, 195, 231);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Following .FollowingList {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.Following .FollowingList button {
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+    border-radius: 8px;
+}
+
+.Following h3 {
+    border: 1px solid darkgreen;
+    border-radius: 8px;
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.Following img {
+    height: 50px;
+}

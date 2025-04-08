@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHTML</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <br>
+
+   <form id="carsForm" onsubmit="addToTable(event)">
+    <div class="mb-3">
+      <input id="photoDetailsInput" class="form-control" type="text" placeholder="Describe photo" required>
+    </div>
+    <div class="mb-3">
+      <input id="photoUrlInput" class="form-control" type="text" placeholder="Enter photo URL" required>
+    </div>
+    <div class="mb-3">
+    <button class="btn btn-primary">Add to Table</button>
+  </div>
+   </form>
+   <div>
+    <span id="existsPhoto">
+
+    </span>
+    <br><br>
+  </div>
+   <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Details</th>
+        <th scope="col">Image</th>
+      </tr>
+    </thead>
+    <tbody id="carsTable">
+      
+    </tbody>
+   </table>
+</body>
+</html>

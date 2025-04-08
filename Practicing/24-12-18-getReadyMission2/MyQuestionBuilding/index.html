@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/app.js"></script>
+    <title>MyQues</title>
+</head>
+<body>
+    <button id="displayUserHairTable">Display Hair Table</button>
+    <button id="displayHairStatsTable">Display Hair Stats</button>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Hair Color</th>
+                <th>Hair Type</th>
+            </tr>
+        </thead>
+        <tbody id="usersHairTable">
+            
+        </tbody>
+    </table>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Hair Type</th>
+                <th>Num of Ppl</th>
+            </tr>
+        </thead>
+        <tbody id="hairStatsTable">
+            <tr>
+                <td>${type}</td>
+                <td>${count}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

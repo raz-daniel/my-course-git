@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+}
+
+table {
+    border: 1px solid black;
+}
+
+table * {
+    
+    border: 1px solid black;
+}
+
+td {
+    width: 150px;
+}
+
