@@ -1,0 +1,23 @@
+{
+    "app": {
+        "port": "80",
+        "name": "Prod"
+    },
+    "sequelize": {
+        "logging": false,
+        "sync": {
+            "force": false
+        }
+    },
+    "s3": {
+        "isLocalstack": false,
+        "connection": {
+            "forcePathStyle": true,
+            "credentials": {
+                "accessKeyId": "test",
+                "secretAccessKey": "test"
+            }
+        }
+    }
+    
+}
